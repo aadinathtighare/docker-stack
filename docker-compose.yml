@@ -1,0 +1,29 @@
+version: '3'
+services:
+  ajay:
+    image: aadinath/ajay:latest
+    ports:
+      - "90:80"
+    deploy:
+      replicas: 3
+
+  vijay:
+    image: aadinath/vijay:latest
+    ports:
+      - "91:80"
+    deploy:
+      replicas: 3
+
+  ram:
+    image: aadinath/ram:latest
+    ports:
+      - "92:80"
+    deploy:
+      replicas: 3
+
+  adi:
+    image: aadinath/adi:latest
+    ports:
+      - "93:80"
+    deploy:
+      replicas: 3
